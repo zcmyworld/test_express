@@ -9,6 +9,6 @@ script: |-
 
   docker login --username=634872896@qq.com -p 1234qwer registry.cn-shenzhen.aliyuncs.com
 
-  docker build -t test_express .
+  docker build -t registry.cn-shenzhen.aliyuncs.com/itgo/test_express .
 
-  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express
+  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express:helloworld
