@@ -2,6 +2,7 @@ FROM node:8.11.1
 
 ADD . /test_express
 
-RUN cd /test_express && npm install
+WORKDIR /test_express
+RUN npm install
 
-
+CMD ["node", "app.js"]
