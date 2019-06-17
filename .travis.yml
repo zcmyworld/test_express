@@ -11,4 +11,4 @@ script: |-
 
   docker build -t registry.cn-shenzhen.aliyuncs.com/itgo/test_express .
 
-  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express:helloworld
+  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express
