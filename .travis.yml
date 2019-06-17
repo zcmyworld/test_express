@@ -7,8 +7,8 @@ before_install:
 
 script: |-
 
-  docker login --username=634872896@qq.com -p 1234qwer registry.cn-shenzhen.aliyuncs.com
+  docker login --username=634872896@qq.com -p ${DOCKER_PWD} registry.cn-shenzhen.aliyuncs.com
 
   docker build -t registry.cn-shenzhen.aliyuncs.com/itgo/test_express .
 
-  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express
+  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express 
