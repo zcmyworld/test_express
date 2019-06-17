@@ -3,3 +3,12 @@ node_js: 8
 
 before_install: 
   npm install
+
+
+script: |-
+
+  docker login --username=634872896@qq.com -p 1234qwer registry.cn-shenzhen.aliyuncs.com
+
+  docker build -t test_express .
+
+  docker push registry.cn-shenzhen.aliyuncs.com/itgo/test_express
